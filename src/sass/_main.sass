@@ -1,3 +1,49 @@
-.block
-	display: flex
-	// remove this
+.out
+	display: block
+	
+.header
+	height: 130px
+	+clr
+
+.header__container
+	position: relative
+	margin: 0 auto
+	width: 845px
+	height: 130px
+
+.header__wrap
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	resize: vertical
+	overflow: auto
+
+.logo
+	float: left
+	&__link
+		text-decoration: none
+		font-size: 26px
+		font-family: "Martel", sans-serif
+		line-height: 0.669
+	&__link:hover
+		font-weight: bold
+	&__part1, &__part2
+		float: left
+	&__part1
+		color: #0e1d2b
+	&__part2
+		color: #ffa326
+
+.nav
+	float: right
+	a
+		font-size: 16px
+		font-family: "Martel", sans-serif
+		color: #0e1d2b
+		line-height: 1.087
+		text-decoration: none
+		margin: 5px
+		box-sizing: border-box
+	a:hover 
+		font-weight: bold
+		border-bottom: 3px solid #ffa326
