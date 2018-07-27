@@ -1,25 +1,32 @@
-.out
-	display: block
-	
+@supports (display: flex) 
+	.out 
+		display: flex
+
+@supports not (display: flex)
+	.out
+		float: left
+
 .header
-	height: 130px
-	+clr
-
-.header__container
+	margin: 52px auto
+	padding: 0
 	position: relative
-	margin: 0 auto
-	width: 845px
-	height: 130px
-
-.header__wrap
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-	resize: vertical
-	overflow: auto
+	height: auto
+	max-width: 845px
+	width: 100%
+	+clr
+	&__container
+		margin: 0
+		padding: 0
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		background: red
+		text-align: center
+	&__wrap
+		margin: 0
 
 .logo
-	float: left
+	display: inline-block
 	&__link
 		text-decoration: none
 		font-size: 26px
@@ -35,7 +42,7 @@
 		color: #ffa326
 
 .nav
-	float: right
+	display: inline-block
 	a
 		font-size: 16px
 		font-family: "Martel", sans-serif
@@ -44,6 +51,7 @@
 		text-decoration: none
 		margin: 5px
 		box-sizing: border-box
+		
 	a:hover 
 		font-weight: bold
 		border-bottom: 3px solid #ffa326
