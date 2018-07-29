@@ -6,5 +6,167 @@
 	{# partial example #}
 	{% include "partials/_header.html" %}
 
+	<!-- begin hero -->
+	<div class="hero">
+		<!-- begin hero__part1 -->
+		<div class="hero__part1">
+			<div class="part1__wrap">
+				<h1 class="part1__title">
+					We create Burgers.
+				</h1>
+				<p class="part1__text">
+					Beautiful hand crafted burgers with tangy sauce lettuce, onions
+				</p>
+			</div>
+		</div>
+		<!-- end hero__part1 -->
+		<!-- begin hero__part2 -->
+		<div class="hero__part2">
+			<div class="part2__wrap">
+				<h1 class="part1__title">
+					Delicious.
+				</h1>
+				<p class="part1__text">
+					Oh yes, they are as they are made with hands and our chef loves
+				</p>
+				<p class="part1__text">
+					Are they really ?
+				</p>
+				<button>Show me</button>
+			</div>
+		</div>
+		<!-- end hero__part2 -->
+	</div>
+	<!-- end hero -->
+	<!-- begin burgers -->
+	<div class="burgers">
+		<div class="burgers__wrap">
+			<div class="price">
+				<img src="../img/price.png" alt="" class="price__img">
+				<h2 class="price__title">Beef Bondy</h2>
+				<p class="price__text">Juicy hand cut beef with Mango sauce fries.</p>
+				<button class="price__button">
+					<div class="price__svg"></div>
+					<div class="price__kj">345 KJ</div>
+					<div class="price__bucks">$12.5</div>
+				</button>
+			</div>
+			<div class="price">
+					<img src="../img/price2.png" alt="" class="price__img">
+					<h2 class="price__title">Beef Bondy</h2>
+					<p class="price__text">Juicy hand cut beef with Mango sauce fries.</p>
+					<button class="price__button">
+						<div class="price__svg"></div>
+						<div class="price__kj">345 KJ</div>
+						<div class="price__bucks">$12.5</div>
+					</button>
+				</div>
+				<div class="price">
+						<img src="../img/price3.png" alt="" class="price__img">
+						<h2 class="price__title">Beef Bondy</h2>
+						<p class="price__text">Juicy hand cut beef with Mango sauce fries.</p>
+						<button class="price__button">
+							<div class="price__svg"></div>
+							<div class="price__kj">345 KJ</div>
+							<div class="price__bucks">$12.5</div>
+						</button>
+					</div>
+		</div>
+	</div>
+	<!-- end burgers -->
+	<!-- begin waitsection -->
+	<div class="waitsect">
+		<div class="waitsect__bckg">
+			<div class="waitsect__wrap">
+				<h1 class="waitsect__title">
+					Wait ! But we also serve...
+				</h1>
+				<div class="waitsect__table">
+					<table style="width:100%">
+						<tr>
+							<td class="dish">French Fries</td>
+							<td class="dish-price">$12</td>
+						</tr>
+						<tr>
+							<td class="dish">Cold Drinks</td>
+							<td class="dish-price">$8</td>
+						</tr>
+						<tr>
+							<td class="dish">Love Choclates</td>
+							<td class="dish-price">$25</td>
+						</tr>
+						<tr>
+							<td class="dish">Coleslaw</td>
+							<td class="dish-price">$9</td>
+						</tr>
+						<tr>
+							<td class="dish">Lots of love</td>
+							<td class="dish-price">Free</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end waitsection -->
+	<!-- begin photos -->
+	<div class="photos">
+		<div class="photos__wrap">
+			<h1 class="wrap__title">
+				Photos
+			</h1>
+			<p class="wrap__text">
+				Beautiful pictues clicked by our Customers
+			</p>
+			<div class="gallery">
+				<div class="gallery__top">
+
+				</div>
+				<div class="boardbox"></div>
+				<div class="gallery__bottom">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end photos -->
+	<!-- begin contact -->
+	<div class="contact">
+		<div class="contact__wrap">
+			<h1 class="wrap__title">
+				Contact
+			</h1>
+			<p class="wrap__text">
+				Beautiful pictues clicked by our Customers
+			</p>
+			<div class="contact__container">
+				<div class="contact__touchus">
+					<p class="contact__title">Fill this form to get in touch with us.</p>
+					<form class="touchus__form" method="post" id="usrform">
+						<input type="text" placeholder="Write your full name here">
+						<input type="email" placeholder="Email Address here">
+						<input type="tel" placeholder="Phone Number">
+						<textarea name="message" id="usrform" form="usrform" cols="30" rows="10"></textarea>
+						<input type="submit" value="Submit Now">
+					</form>
+				</div>
+				<div class="contact__location">
+					<div id="map"></div>
+					<div class="contact__address">272 Collin Street, Melbourne 3000</div>
+					<div class="contact__call">Call | </div>
+					<a href="tel:" class="contact__phone">09005896</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact -->
+	<div class="footer">
+		<div class="copywrite">
+			All RIghts Reserved - 2016 DesignCoon
+		</div>
+		<a href="https://www.sellfy.com/designcoon" class="website" type="text/html" target="_blank" >
+			www.sellfy.com/designcoon
+		</a>
+	</div>
 
 {% endblock %}
