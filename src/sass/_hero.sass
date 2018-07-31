@@ -6,17 +6,16 @@
         width: 50%
         float: left   
 
-.part1__bckg
+.part1__bckg, .part2__bckg
     height: 395px
-    background-color: #0e1d2b
     opacity: 0.92
     position: relative
 
+.part1__bckg
+    background-color: #0e1d2b
+
 .part2__bckg
-    position: relative
-    height: 395px
     background-color: #ff9f1c
-    opacity: 0.92
 
 .part1__wrap, .part2__wrap
     position: absolute
@@ -27,8 +26,7 @@
     width: 100%
 
 .part2__wrap
-    right: none
-    left: 17%
+    left: 0
 
 .part1__title, .part2__title
     font-size: 65px
@@ -39,6 +37,7 @@
     color: #ffa326
 
 .part2__title
+    margin-left: 17.5%
     color: #ffffff
 
 .part1__text, .part2__text
@@ -47,7 +46,17 @@
     line-height: 1.429
 
 .part1__text
+    display: inline-block
     color: #ffffff
 
 .part2__text
+    display: inline-block
+    margin-left: 17.5%
     color: #0d1e2d
+
+.showme
+    display: inline-block
+    margin-left: 10px
+    width: 159px
+    height: 38px
+    box-shadow: 6px 4px 8px 1px rgba(0,0,0,0.75)
