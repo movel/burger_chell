@@ -114,7 +114,7 @@
 	<!-- end waitsection -->
 	<!-- begin photos -->
 	<div class="photos">
-		<div class="photos__wrap">
+		<div class="photos__wrap container">
 			<h1 class="wrap__title">
 				Photos
 			</h1>
@@ -123,11 +123,54 @@
 			</p>
 			<div class="gallery">
 				<div class="gallery__top">
-
+					<div class="top__photo">
+						<a target="_blank" href="img/food.jpg">
+							<img src="img/food.jpg" alt="food">
+						</a>
+					</div>
+					<div class="top__photo">
+						<a target="_blank" href="img/tomato.jpg">
+							<img src="img/tomato.jpg" alt="food">
+						</a>
+					</div>
+					<div class="top__photo">
+						<a target="_blank" href="img/abstract.jpg">
+							<img src="img/abstract.jpg" alt="food">
+						</a>
+					</div>
 				</div>
-				<div class="boardbox"></div>
 				<div class="gallery__bottom">
-					
+					<div class="board"></div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/food.jpg">								
+							<img src="img/food.jpg" alt="food">
+						</a>
+					</div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/tomato.jpg">
+							<img src="img/tomato.jpg" alt="food">
+						</a>
+					</div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/appetite.jpg">
+							<img src="img/appetite.jpg" alt="food">
+						</a>
+					</div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/food.jpg">
+							<img src="img/food.jpg" alt="food">
+						</a>
+					</div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/bread.jpg">
+							<img src="img/bread.jpg" alt="food">
+						</a>
+					</div>
+					<div class="bottom__photo">
+						<a target="_blank" href="img/abstract.jpg">
+							<img src="img/abstract.jpg" alt="food">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -135,21 +178,21 @@
 	<!-- end photos -->
 	<!-- begin contact -->
 	<div class="contact">
-		<div class="contact__wrap">
-			<h1 class="wrap__title">
-				Contact
-			</h1>
-			<p class="wrap__text">
-				Beautiful pictues clicked by our Customers
-			</p>
-			<div class="contact__container">
+		<h1 class="wrap__title">
+			Contact
+		</h1>
+		<p class="wrap__text">
+			Beautiful pictues clicked by our Customers
+		</p>
+		<div class="contact__container">
+			<div class="contact__wrap container">
 				<div class="contact__touchus">
-					<p class="contact__title">Fill this form to get in touch with us.</p>
+					<h1 class="contact__title">Fill this form to get in touch with us.</h1>
 					<form class="touchus__form" method="post" id="usrform">
 						<input type="text" placeholder="Write your full name here">
 						<input type="email" placeholder="Email Address here">
 						<input type="tel" placeholder="Phone Number">
-						<textarea name="message" id="usrform" form="usrform" cols="30" rows="10"></textarea>
+						<textarea name="message" id="usrform" form="usrform" cols="29" rows="10" placeholder="Message you want to deliver..."></textarea>
 						<input type="submit" value="Submit Now">
 					</form>
 				</div>
@@ -164,12 +207,30 @@
 	</div>
 	<!-- end contact -->
 	<div class="footer">
-		<div class="copywrite">
-			All RIghts Reserved - 2016 DesignCoon
+		<div class="container">
+			<div class="copywrite">
+				All RIghts Reserved - 2016 DesignCoon
+			</div>
+			<div>
+				<a href="https://www.sellfy.com/designcoon" class="website" type="text/html" target="_blank" >
+					www.sellfy.com/designcoon
+				</a>
+			</div>
 		</div>
-		<a href="https://www.sellfy.com/designcoon" class="website" type="text/html" target="_blank" >
-			www.sellfy.com/designcoon
-		</a>
 	</div>
+
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			var uluru = {lat: -25.344, lng: 131.036};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), {zoom: 4, center: uluru});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmQFGNSkwAEKedw_-2_jvYomXvXvt48qE&callback=initMap" type="text/javascript"></script>
 
 {% endblock %}

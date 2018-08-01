@@ -1,0 +1,62 @@
+.header
+	max-width: 845px
+	width: 100%
+	margin: 50px auto
+	+clr
+	&__container
+		width: 100%
+		text-align: center
+		position: relative
+
+.logo
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	&__link
+		text-decoration: none
+		font-size: 26px
+		font-family: "Martel", sans-serif
+		line-height: 0.669
+	&__link:hover
+		font-weight: bold
+	&__part1, &__part2
+		float: left
+	&__part1
+		color: #0e1d2b
+	&__part2
+		color: #ffa326
+
+.nav
+	float: right
+	right: 0
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	a
+		font-size: 16px
+		font-family: "Martel", sans-serif
+		color: #0e1d2b
+		line-height: 1.087
+		text-decoration: none
+		margin-left: 20px
+		box-sizing: border-box
+		float: left
+		border-bottom: 3px solid #ffffff
+	a:hover 
+		font-weight: bold
+		border-bottom: 3px solid #ffa326
+
+.footer
+    background-color: #050b10
+    +clr
+
+.copywrite, .website
+    font-size: 12px
+    font-family: "Martel"
+    color: #ffa326
+    line-height: 3.821
+    float: left
+
+.website
+	float: right
+	text-decoration: none
