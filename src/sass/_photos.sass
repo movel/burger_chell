@@ -1,5 +1,48 @@
 .photos
+    +clr
     &__wrap
         text-align: center
     img 
         width: 100%
+
+.top__photo
+    box-sizing: border-box
+    width: 33.333333333333333333333333333333%
+    float: left
+    margin: 0
+    img
+        height: 184px
+        max-width: 100%
+        transform: scale(1.01)
+
+.bottom__photo
+    box-sizing: border-box
+    width: 16.666666666666666666666666666667%
+    float: left
+    margin: 0
+    margin-top: -10px
+    z-index: 900
+    img
+        height: 92px
+        max-width: 100%
+        transform: scale(1.01)
+
+.gallery__top
+    position: relative
+    margin: 0
+    +clr
+
+.gallery__bottom
+    position: relative
+    margin: 0
+    +clr 
+
+.board
+    position: absolute
+    top: -20px
+    left: 0
+    width: 100.2%
+    height: 10px
+    border: 3px solid #ff9f1c
+    box-sizing: border-box
+    z-index: 999
