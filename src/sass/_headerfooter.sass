@@ -22,18 +22,10 @@
 		font-weight: bold
 	&__part1, &__part2
 		float: left
-		+r(620)
-			text-align: center
 	&__part1
 		color: #0e1d2b
 	&__part2
 		color: #ffa326
-	+r(620)
-		display: inline-block
-		position: relative
-		max-width: 100%
-		margin: 0 auto
-		+clr
 
 .nav
 	float: right
@@ -41,6 +33,8 @@
 	position: absolute
 	top: 50%
 	transform: translateY(-50%)
+	li 
+		display: inline-block
 	a
 		font-size: 16px
 		font-family: "Martel", sans-serif
@@ -53,13 +47,7 @@
 		border-bottom: 3px solid #ffffff
 	a:hover 
 		font-weight: bold
-		border-bottom: 3px solid #ffa326
-	+r(620)
-		display: inline-block
-		position: relative
-		width: 100%
-		margin: 20px auto
-		+clr
+		border-bottom: 3px solid #ffa326		
 
 .footer
     background-color: #050b10
@@ -72,6 +60,18 @@
     line-height: 3.821
     float: left
 
+.copywrite
+	+r(620)
+		display: block
+		text-align: center
+		float: none
+		margin: 0
+
 .website
 	float: right
 	text-decoration: none
+	+r(620)
+		display: block
+		text-align: center
+		float: none
+		margin: 0
