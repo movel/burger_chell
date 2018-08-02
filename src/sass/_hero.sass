@@ -1,11 +1,16 @@
 .hero
+    margin: 0
     +clr
     &__part1, &__part2
         background-size: cover
         background-repeat: no-repeat
         background-position: 100% 100% 
         width: 50%
-        float: left   
+        float: left
+        +r(620)
+            float: none
+            display: block
+            width: 100%
 
 .part1__bckg, .part2__bckg
     height: 395px
@@ -25,6 +30,11 @@
     transform: translateY(-50%)
     max-width: 422px
     width: 100%
+    +r(620)
+        position: relative
+        display: block
+        margin: 0 auto
+
 
 .part2__wrap
     left: 0

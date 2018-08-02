@@ -8,8 +8,12 @@
 		text-align: center
 		position: relative
 		margin: 0 auto
+		padding: 0
 	+r(620)
 		margin-bottom: 0
+		padding: 0
+		height: 300px
+		+clr
 
 .logo
 	position: absolute
@@ -28,6 +32,7 @@
 			float: none
 			display: inline-block
 			padding-top: 15px
+			margin: 0
 	&__part1
 		color: #0e1d2b
 	&__part2
@@ -36,6 +41,7 @@
 		display: block
 		margin: 0 auto
 		width: 100%
+		+clr
 
 .nav
 	float: right
@@ -43,6 +49,7 @@
 	position: absolute
 	top: 50%
 	transform: translateY(-50%)
+	+clr
 	a
 		font-size: 16px
 		font-family: "Martel", sans-serif
@@ -58,7 +65,7 @@
 			display: block
 			clear: left
 			margin: 0
-			padding: 15px 0
+			padding: 15px 0 
 			font-size: 20px
 			width: 100%	
 	a:hover 
@@ -74,6 +81,8 @@
 		width: 100%
 		margin-top: 50%
 		margin-bottom: 0
+		padding: 0
+		+clr
 
 .footer
     background-color: #050b10
