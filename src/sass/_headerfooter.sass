@@ -7,6 +7,7 @@
 		width: 100%
 		text-align: center
 		position: relative
+		margin: 0 auto
 
 .logo
 	position: absolute
@@ -21,10 +22,18 @@
 		font-weight: bold
 	&__part1, &__part2
 		float: left
+		+r(620)
+			text-align: center
 	&__part1
 		color: #0e1d2b
 	&__part2
 		color: #ffa326
+	+r(620)
+		display: inline-block
+		position: relative
+		max-width: 100%
+		margin: 0 auto
+		+clr
 
 .nav
 	float: right
@@ -45,6 +54,12 @@
 	a:hover 
 		font-weight: bold
 		border-bottom: 3px solid #ffa326
+	+r(620)
+		display: inline-block
+		position: relative
+		width: 100%
+		margin: 20px auto
+		+clr
 
 .footer
     background-color: #050b10
