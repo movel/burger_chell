@@ -16,6 +16,8 @@
     height: 395px
     opacity: 0.92
     position: relative
+    +r(620)
+        height: 250px
 
 .part1__bckg
     background-color: #0e1d2b
@@ -26,7 +28,6 @@
 .part1__wrap, .part2__wrap
     position: absolute
     top: 50%
-    right: 0
     transform: translateY(-50%)
     max-width: 422px
     width: 100%
@@ -35,6 +36,8 @@
         display: block
         margin: 0 auto
 
+.part1__wrap
+    right: 0
 
 .part2__wrap
     left: 0
@@ -43,6 +46,9 @@
     font-size: 65px
     font-family: "Rubik"
     line-height: 0.923
+    +r(620)
+        text-align: center
+        font-size: 50px
 
 .part1__title
     color: #ffa326
@@ -50,11 +56,16 @@
 .part2__title
     margin-left: 17.5%
     color: #ffffff
+    +r(620)
+        margin-left: 0
 
 .part1__text, .part2__text
     font-size: 14px
     font-family: "Martel"
     line-height: 1.429
+    +r(620)
+        text-align: center
+        margin: 15px auto
 
 .part1__text
     display: inline-block
