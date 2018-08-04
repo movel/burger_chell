@@ -2,12 +2,14 @@
     background-position: 100% 100%
     background-repeat: no-repeat
     background-size: cover
+    +clr
     &__bckg
         background: linear-gradient(#0e1d2b, #ffa326)
         opacity: 0.92
     &__wrap
         height: 404px
         position: relative
+        +clr
     &__title
         display: inline-block
         position: absolute
@@ -17,11 +19,13 @@
         font-family: "Rubik"
         color: #ffffff
         line-height: 1
+        +r(620)
+            // display: block
+            position: relative
     &__table
         display: inline-block
         position: absolute
         top: 50%
-        // left: 55%
         right: 0
         transform: translateY(-50%)
         font-size: 16px
@@ -37,3 +41,6 @@
                 padding: 15px
                 td 
                     padding: 15px
+        +r(620)
+            // display: block
+            position: relative
