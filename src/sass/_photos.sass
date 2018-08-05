@@ -14,6 +14,15 @@
         height: 184px
         max-width: 100%
         transform: scale(1.01)
+    img:hover
+        transform: scale(1.05)
+    +r(620)
+        display: block
+        width: 100%
+        margin: 0 auto
+        img 
+            width: 100%
+            height: auto
 
 .bottom__photo
     box-sizing: border-box
@@ -26,6 +35,15 @@
         height: 92px
         max-width: 100%
         transform: scale(1.01)
+    img:hover
+        transform: scale(1.05)
+    +r(620)
+        display: block
+        width: 100%
+        margin: 0 auto
+        img 
+            width: 100%
+            height: auto
 
 .gallery__top
     position: relative
@@ -46,3 +64,5 @@
     border: 3px solid #ff9f1c
     box-sizing: border-box
     z-index: 999
+    +r(620)
+        display: none
