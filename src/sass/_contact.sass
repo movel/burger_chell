@@ -6,9 +6,15 @@
         margin: 0 auto
         padding: 50px 0
         +clr
+        +r(620)
+            padding: 25px 0
     &__touchus, &__location
         box-sizing: border-box
         text-align: left
+        +r(620)
+            float: none
+            display: block
+            width: 100%
     &__touchus
         float: left
         width: 35.310%
@@ -20,9 +26,13 @@
         line-height: 1.286
         text-align: left
         margin-bottom: 7px
+        +r(620)
+            margin-left: 7%
     &__location
         float: right
         width: 43.7241%
+        +r(620)
+            margin-top: 15px
     &__address
         margin-top: 25px
         font-size: 18.52px
@@ -79,3 +89,6 @@
         text-align: center
         background-color: #ffa326
         padding: 0
+    +r(620)
+        width: 85%
+        margin: 0 auto
